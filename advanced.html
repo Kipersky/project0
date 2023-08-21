@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <style>
+            div { 
+                text-align: center;
+                margin: auto;
+                padding: 0px; 
+            }
+
+            .form-control {
+                text-align: left;
+                width: 500px;  
+            }
+
+            #submit {
+                background-color: rgb(66, 133, 244);
+                color: white;
+                border: none;
+
+                
+            }
+
+            .col-auto {
+                text-align: left;
+                margin: 10px;
+            }
+
+            #buttons {
+                display: grid;
+                grid-column-gap: 20px;
+                grid-template-columns: 200px 200px;
+                padding: 10px;
+            }
+
+            #header {
+                background-color: rgb(244, 180, 0);
+                display: grid;
+                grid-template-columns: 30% 40% 30%;
+                padding: 10px;
+                margin-bottom: 20px; 
+
+            }
+
+            #title {
+                text-align: center;
+                font-size: large;
+
+            }
+
+            .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(66, 133, 244);
+
+            }
+            #submit_div{
+                margin-left: 20px;
+                text-align: left;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="header">
+        <div></div>
+        <div id="title">
+            <h1>GOOGLE ADVANCED SEARCH</h1>
+        </div>
+        <div id="buttons">
+            <a href="index.html" type="button" class="btn btn-primary">Google Search</a>
+            <a href="image.html" type="button" class="btn btn-primary">Google Image</a>
+        </div>
+        </div>
+        <form action="https://www.google.com/search">
+            
+            <div class="row g-3 align-items-center">
+                <div class="col-auto" style="width: 200px;">
+                  <label for="search_1" class="col-form-label">all these words:</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  name="as_q" id="search_1" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+            </div>
+            
+            <div class="row g-3 align-items-center">
+                <div class="col-auto" style="width: 200px;">
+                  <label for="search_2" class="col-form-label">this exact word or phrase:</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text" name="as_epq" id="search_2" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+            </div>
+            
+            <div class="row g-3 align-items-center">
+                <div class="col-auto" style="width: 200px;">
+                  <label for="search_3" class="col-form-label">any of these words:</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  name="as_oq" id="search_3" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+            </div>
+            
+            <div class="row g-3 align-items-center">
+                <div class="col-auto" style="width: 200px;">
+                  <label for="search_4" class="col-form-label">none of these words:</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  name="as_eq" id="search_4" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+            </div>
+            
+            <div id="submit_div">
+                <input type="submit" id="submit" value="Advanced Search">
+            </div>
+        </form>
+    </body>
+</html>
+
