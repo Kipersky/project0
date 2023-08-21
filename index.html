@@ -7,34 +7,71 @@
             div { 
                 text-align: center;
                 margin: auto;
+                padding: 0px; 
             }
 
             #search {
                 text-align: center;
+                margin-top: ;
                 margin: auto;
-                width: 500px; 
+                width: 500px;  
+            }
+
+            #submit {
+                
+            }
+
+            #buttons {
+                display: grid;
+                grid-column-gap: 20px;
+                grid-template-columns: 200px 200px;
+                padding: 10px;
             }
 
             #header {
-                background-color: gold;
+                background-color: rgb(244, 180, 0);
                 display: grid;
-                grid-column-gap: 20px;
-                grid-template-columns: auto 200px 200px;
-                padding-bottom: 20px;
+                grid-template-columns: 30% 40% 30%;
+                padding: 10px;
+                margin-bottom: 20px; 
+
             }
+
+            #title {
+                text-align: center;
+                font-size: large;
+
+            }
+
+            .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(66, 133, 244);
+
+            }
+
+
         </style>
     </head>
     <body>
         <div id="header">
-            <div class="grid-item">GOOGLE SEARCH</div>
-            <a href="" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Google Image</a>
-            <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Google Advanced Search</a>
-
+        <div></div>
+        <div id="title">
+            <h1>GOOGLE SEARCH</h1>
+        </div>
+        <div id="buttons">
+            <a href="image.html" type="button" class="btn btn-primary">Google Image</a>
+            <a href="advanced.html" type="button" class="btn btn-primary">Google Advanced Search</a>
+        </div>
         </div>
         <form action="https://www.google.com/search">
             <div class="mb-3">
                 <input type="text" placeholder="Your Google Search" name="q" class="form-control" id="search" aria-describedby="emailHelp">
-                <input type="submit" value="Google Search">
+            </div>
+            <div id="submit_buttons">
+                <input type="submit" id="submit" value="Google Search">
+                <input type="submit" id="submit" value="I'm Feeling Lucky">
             </div>
         </form>
     </body>
